@@ -1,0 +1,606 @@
+{
+    "application": [
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Tax Preparation Service Survey",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-0-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "New service provides tax prep assistance during COVID-19"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Due to COVID-19 precautions, all in-person tax preparation has been suspended. The City of Detroit Mayor’s Office, United Way for Southeastern Michigan, Accounting Aid Society and Wayne Metropolitan Community Action Agency are pleased to bring tax services to your home." 
+                                },
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Any taxpayer who has an email, smart phone/tablet/computer with a camera, and makes about $56,000/year or less is eligible. This new service keeps you and your family safe and ensures you have access to the services you need during this unprecedented time. Here's how it works: Schedule an appointment and a certified tax intake specialist will walk you through the process of submitting your documents online. We will complete your taxes and contact you directly to review before submitting to the IRS." 
+                                },
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "To get started making an online appointment, click the next button below to answer a few questions." 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "step-0-form-0",
+                        "savedData"     : false,
+                        "type"          : "single-button",
+                        "position"      : "center",
+                        "requirements"  : {
+                            "inputType"                 : "button",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : false,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : false,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "validation"            : "Next",
+                                    "validationType"        : "equal",
+                                    "next"                  : 1,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : null,
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-0-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"    : "start-form",
+                                        "tag"   : "button",
+                                        "type"  : "submit",
+                                        "name"  : "start-form",
+                                        "description"   : "Button to start application.",
+                                        "text"  : "Next",
+                                        "label" : false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Tax Preparation Service Survey",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-1-card-0",
+                        "type"      : "right pop-up",
+                        "title"     : {
+                            "type"  : "small",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Where do you live?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "live",
+                        "type"          : "radio-buttons plus-other",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "radio",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : null,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "id"                    : "live",
+                                    "validation"            : "detroit",
+                                    "validationType"        : "equal",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "live",
+                                    "validation"            : "wayne",
+                                    "validationType"        : "equal",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "live",
+                                    "validation"            : "oakland",
+                                    "validationType"        : "equal",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "live",
+                                    "validation"            : "macomb",
+                                    "validationType"        : "equal",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-3-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"                    : "detroit",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "detroit",
+                                        "placeholder"           : null,
+                                        "name"                  : "live",
+                                        "description"           : "Broker",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "City of Detroit",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "wayne",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "wayne",
+                                        "placeholder"           : null,
+                                        "name"                  : "live",
+                                        "description"           : "Broker",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Wayne County (not Detroit)",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "oakland",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "oakland",
+                                        "placeholder"           : null,
+                                        "name"                  : "live",
+                                        "description"           : "oakland",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Oakland County",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "macomb",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "macomb",
+                                        "placeholder"           : null,
+                                        "name"                  : "live",
+                                        "description"           : "macomb",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Macomb County",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "submit",
+                                        "tag"                   : "button",
+                                        "type"                  : "submit",
+                                        "value"                 : "submit",
+                                        "placeholder"           : null,
+                                        "name"                  : "submit",
+                                        "description"           : "Submit information",
+                                        "text"                  : "Next",
+                                        "label"                 : false,
+                                        "labelText"             : null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints" :[]
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Tax Preparation Service Survey",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-2-card-0",
+                        "type"      : "right pop-up",
+                        "title"     : {
+                            "type"  : "small",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "How did you hear about this service?" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "hear-about",
+                        "type"          : "radio-buttons plus-other",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "radio",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : null,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "detroit",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "united-way",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "aid-society",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "wayne-metro",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "tv-radio",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "family-friends",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "hear-about",
+                                    "validation"            : "other",
+                                    "validationType"        : "random",
+                                    "next"                  : 2,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "status",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-3-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"                    : "detroit",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "detroit",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "detroit",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "City of Detroit website/social media",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "united-way",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "united-way",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "united-way",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "United Way website/social media",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "aid-society",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "aid-society",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "aid-society",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Accounting Aid Society website / social media",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "wayne-metro",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "wayne-metro",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "wayne-metro",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Wayne Metro website / social media",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "tv-radio",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "tv-radio",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "tv-radio",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "TV / radio news ",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "family-friends",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "family-friends",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "family-friends",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Family / friends",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "other",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "other",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "other",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Other",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "submit",
+                                        "tag"                   : "button",
+                                        "type"                  : "submit",
+                                        "value"                 : "submit",
+                                        "placeholder"           : null,
+                                        "name"                  : "submit",
+                                        "description"           : "Submit information",
+                                        "text"                  : "Next",
+                                        "label"                 : false,
+                                        "labelText"             : null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints" :[]
+            }
+        }
+    ]
+}

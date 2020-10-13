@@ -1,0 +1,152 @@
+@import '../colors.scss';
+body{
+    margin: 0;
+}
+#App{
+    display: flex;
+    z-index: 5;
+    height: 100vh;
+
+    .Panel{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: $grey;
+
+        .intake{
+            margin-bottom: .5em;
+            flex: 1;
+            height: 100%;
+
+            .header{
+                background-color: $color-1;
+                display: flex;
+                padding: .25em;
+
+                p{
+                    color: $white;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+
+                    img{
+                        width: 3em;
+                    }
+
+                    span{
+                        font-size: 1.15em;
+                        font-weight: bold;
+                    }
+                }
+
+                form{
+                    margin-left: 1em;
+
+                    button.back{
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        background: $color-2;
+                        color: $color-1;
+                        padding: .1em .5em .4em .5em;
+
+                        span{
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    button.back:hover{
+                        color: $black;
+                        background-color: $color-3;
+                    }
+
+                    button.restart{
+                        font-weight: bold;
+                        border: none;
+                        cursor: pointer;
+                        padding: 0 .25em .1em .25em;
+                        color: $white;
+                        background-color: $color-4;
+                        font-size: 1.75em;
+                        position: relative;
+                        top: .12em;  
+                        margin-left: .15em;                 
+                    }
+
+                    button.restart:hover{
+                        color: $black;
+                    }
+                }
+            }
+
+            .intake-container{
+                height: calc(100% - 4.5em);
+                overflow: auto;
+
+
+                .intake-hint{
+                    position: absolute;
+                    top: 3.75em;
+                    width: 100%;
+                    z-index: 5;
+                    height: auto;
+                    background-color: transparent;
+
+                    .intake-hint-group{
+                        display: none;
+                        opacity: 0;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+                .intake-hint.active{
+                    height: 100%;
+                    background-color: transparentize($color: $white, $amount: .2);
+                    
+                    .intake-hint-group{
+                        display: block;
+                        opacity: 1;
+                        transition: all 1s ease-in-out;
+                    }
+                }
+
+                .hint-btn.close-hint, .hint-btn.show-hint{
+                    border-radius: 50%;
+                    width: 3em;
+                    height: 3em;
+                    position: absolute;
+                    top: .75em;
+                    right: 1em;
+                    border: 0;
+                    background-color: $color-3;
+                    color: $black;
+                    cursor: pointer;
+
+                    i{
+                        font-size: 1.5em;
+                    }
+                }
+
+                .hint-btn.show-hint{
+                    i{
+                        position: relative;
+                        top: .2em;
+                    }
+
+                    small{
+                        position: relative;
+                        top: -.25em;
+                    }
+                }
+
+                .hint-btn.close-hint{
+                    background-color: $color-4;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
