@@ -358,7 +358,8 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "detroit",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : false,
                                     "formType"              : "application",
@@ -370,7 +371,7 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "united-way",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -382,7 +383,7 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "aid-society",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -394,7 +395,7 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "wayne-metro",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -406,7 +407,7 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "tv-radio",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -418,7 +419,7 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "family-friends",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -430,7 +431,7 @@
                                 {
                                     "id"                    : "hear-about",
                                     "validation"            : "other",
-                                    "validationType"        : "random",
+                                    "validationType"        : "equal",
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
