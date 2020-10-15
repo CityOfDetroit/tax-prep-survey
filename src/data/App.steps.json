@@ -372,6 +372,7 @@
                                     "id"                    : "hear-about",
                                     "validation"            : "united-way",
                                     "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -384,6 +385,7 @@
                                     "id"                    : "hear-about",
                                     "validation"            : "aid-society",
                                     "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -396,6 +398,7 @@
                                     "id"                    : "hear-about",
                                     "validation"            : "wayne-metro",
                                     "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -408,6 +411,7 @@
                                     "id"                    : "hear-about",
                                     "validation"            : "tv-radio",
                                     "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -420,6 +424,7 @@
                                     "id"                    : "hear-about",
                                     "validation"            : "family-friends",
                                     "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -432,6 +437,7 @@
                                     "id"                    : "hear-about",
                                     "validation"            : "other",
                                     "validationType"        : "equal",
+                                    "addRandom"             : true,
                                     "next"                  : 2,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
@@ -601,6 +607,90 @@
                     }
                 ],
                 "hints" :[]
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Tax Preparation Service Survey",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-3-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Claim your refund today!"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Make your tax prep appointment with Accounting Aid Society" 
+                                },
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "a",
+                                    "link"      : "https://accountingaidsociety.org/vita-ace/",
+                                    "content"   : "Make Appointment" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Tax Preparation Service Survey",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-4-card-0",
+                        "type"      : "center pop-up",
+                        "title"     : {
+                            "type"  : "medium",
+                            "value" : "Claim your refund today!"
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "p",
+                                    "content"   : "Make your tax prep appointment with Wayne Metropolitan Community Action Agency" 
+                                },
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "a",
+                                    "link"      : "http://waynemetrovirtualtax.timetap.com/",
+                                    "content"   : "Make Appointment" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [],
+                "hints": []
             }
         }
     ]

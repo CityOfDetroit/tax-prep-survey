@@ -737,7 +737,9 @@ function Form(props) {
                     case 'equal':
                         return inputData[l.id].includes(l.validation);   
                         break;
-                
+
+                    case 'random':
+
                     default:
                         break;
                 }
@@ -804,7 +806,18 @@ function Form(props) {
                             break;
                     }
                 }
-                currentNext = requirements.logic[currentLogic].next;
+                if(requirements.logic[currentLogic].addRandom){
+                    let services = ['wayne','society'];
+                    let randomElement = services[Math.floor(.5 * services.length)];
+                    let servicesStep = {
+                        wayne: 3,
+                        society : 4
+                    };
+                    currentNext = servicesStep[randomElement];
+                    console.log(currentNext);
+                }else{
+                    currentNext = requirements.logic[currentLogic].next;
+                }
             }
             switch (true) {
                 case requirements.isPosting == true:
