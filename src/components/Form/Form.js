@@ -20,6 +20,7 @@ function Form(props) {
         buildType   : useState(),
         ...(props.state || {})
     };
+    const [lastVendor, setLastVendor]   = useState();
     const [error, setError]             = useState();
     const [btnState, setbtnState]       = useState();
     const [extras, setExtras]           = useState();
@@ -460,6 +461,12 @@ function Form(props) {
                     });
                     break;
 
+                case 'checkLast':
+                    e.json().then(data => {
+                        setLasVendor(data.data.last_company);
+                    });
+                    break;
+
                 default:
                     tempHistory = stepHistory;
                     tempHistory.push(currentStep);
@@ -708,7 +715,7 @@ function Form(props) {
         let specialType  = false;
         let inputData    = {};
         let tempFormData = {};
-        let postData     = {answers:null};
+        let postData     = {data:null, key: "tax_assistance"};
         let tempHistory  = [];
         let currentLogic, currentMultiLogic, currentNext; 
         if(requirements.logic.length){
@@ -806,23 +813,78 @@ function Form(props) {
                             break;
                     }
                 }
-                if(requirements.logic[currentLogic].addRandom){
-                    let services = ['wayne','society'];
-                    let randomElement = services[Math.floor(.5 * services.length)];
-                    let servicesStep = {
-                        wayne: 3,
-                        society : 4
-                    };
-                    currentNext = servicesStep[randomElement];
-                    console.log(currentNext);
-                }else{
-                    currentNext = requirements.logic[currentLogic].next;
-                }
+                currentNext = requirements.logic[currentLogic].next;
             }
             switch (true) {
                 case requirements.isPosting == true:
                     postData.answers = tempFormData;
-                    Connector.start('post',`https://apis.detroitmi.gov/property_applications/${appID}/answers/`,postData,true,props.token,'application/json',(e)=>{handleAPICalls(e, 'saveForm', step, currentNext, requirements.isFinalStep)},(e)=>{handleAPICalls(e, 'saveForm', step)});
+                    fetch('https://apis.detroitmi.gov/data_cache/user_cache/user_cache_tax_assistance/')
+                    .then((res) => {
+                        res.json().then(data => {
+                            switch (tempFormData['hear-about']['hear-about'][0]) {
+                                case 'aid-society':
+                                    if(props.aidSociety){
+                                        currentNext = 3;
+                                    }else{
+                                        currentNext = 4;
+                                    }
+                                    break;
+
+                                case 'wayne-metro':
+                                    if(props.wayneMetro){
+                                        currentNext = 4;
+                                    }else{
+                                        currentNext = 3;
+                                    }
+                                    break;
+                            
+                                default:
+                                    if(data.data.last_company == 'aid-society'){
+                                        if(props.wayneMetro){
+                                            currentNext = 4;
+                                        }else{
+                                            currentNext = 3;
+                                        }
+                                    }else{
+                                        if(props.aidSociety){
+                                            currentNext = 3;
+                                        }else{
+                                            currentNext = 4;
+                                        }
+                                    }
+                                    break;
+                            }
+                            if(currentNext == 3){
+                                postData.data = {last_company: 'aid-society'};
+                            }else{
+                                postData.data = {last_company: 'wayne-metro'};
+                            }
+                            let req = new Request('https://apis.detroitmi.gov/data_cache/user_cache/data/', {
+                                method: 'POST',
+                                body: JSON.stringify(postData),
+                                headers: new Headers({
+                                  'Content-type'    : 'application/json',
+                                }),
+                                redirect: 'follow'
+                              });
+                            fetch(req)
+                            .then((res) => {
+                                res.json().then(data => {
+                                });
+                            })
+                            .catch((error) => {
+                                console.log(error);
+                            });
+                            tempHistory = stepHistory;
+                            tempHistory.push(step);
+                            setStepHistory(tempHistory);
+                            setStep(currentNext);
+                        });
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+                    // Connector.start('post',`https://apis.detroitmi.gov/data_cache/user_cache/data/`,postData,true,props.token,'application/json',(e)=>{handleAPICalls(e, 'saveForm', step, currentNext, requirements.isFinalStep)},(e)=>{handleAPICalls(e, 'saveForm', step)});
                     break;
 
                 case requirements.isGetting == true:

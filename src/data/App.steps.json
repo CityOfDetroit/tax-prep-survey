@@ -349,7 +349,7 @@
                             "needsNewID"                : false,
                             "historyOverrite"           : null,
                             "nextGlobal"                : null,
-                            "isPosting"                 : false,
+                            "isPosting"                 : true,
                             "isGetting"                 : false,
                             "isPostingFullForm"         : true,
                             "postingTypeGlobal"         : null,
