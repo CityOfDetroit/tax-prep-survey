@@ -533,6 +533,25 @@
                                         "required"              : true
                                     },
                                     {   
+                                        "id"                    : "detroitatwork",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "detroitatwork",
+                                        "placeholder"           : null,
+                                        "name"                  : "hear-about",
+                                        "description"           : "detroitatwork",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Detroit At Work",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
                                         "id"                    : "tv-radio",
                                         "tag"                   : "input",
                                         "type"                  : "radio",
