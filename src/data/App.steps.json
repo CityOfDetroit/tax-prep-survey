@@ -29,14 +29,19 @@
                                     "content"   : "Due to COVID-19 precautions, all in-person tax preparation has been suspended. The City of Detroit Mayor’s Office, United Way for Southeastern Michigan, Accounting Aid Society and Wayne Metropolitan Community Action Agency are pleased to bring tax services to your home." 
                                 },
                                 {
-                                    "id"        : "card-0-body-0",
+                                    "id"        : "card-0-body-1",
                                     "tag"       : "p",
                                     "content"   : "Any taxpayer who has an email, smart phone/tablet/computer with a camera, and makes about $57,000/year or less is eligible. This new service keeps you and your family safe and ensures you have access to the services you need during this unprecedented time. Here's how it works: Schedule an appointment and a certified tax intake specialist will walk you through the process of submitting your documents online. We will complete your taxes and contact you directly to review before submitting to the IRS." 
                                 },
                                 {
-                                    "id"        : "card-0-body-0",
+                                    "id"        : "card-0-body-2",
                                     "tag"       : "p",
                                     "content"   : "To get started making an online appointment, click the next button below to answer a few questions." 
+                                },
+                                {
+                                    "id"        : "card-0-body-3",
+                                    "tag"       : "p",
+                                    "content"   : "NEW APPOINTMENTS ARE RELEASED EVERY MORNING. PLEASE CHECK BACK IF YOU DO NOT SEE AN OPEN APPOINTMENT SLOT." 
                                 }
                             ]
                         }
