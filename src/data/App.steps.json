@@ -26,22 +26,95 @@
                                 {
                                     "id"        : "card-0-body-0",
                                     "tag"       : "p",
-                                    "content"   : "Due to COVID-19 precautions, all in-person tax preparation has been suspended. The City of Detroit Mayor’s Office, United Way for Southeastern Michigan, Accounting Aid Society and Wayne Metropolitan Community Action Agency are pleased to bring tax services to your home." 
+                                    "content"   : "The City of Detroit Mayor’s Office, United Way for Southeastern Michigan, Accounting Aid Society and Wayne Metropolitan Community Action Agency are pleased to offer 3 ways to get your taxes prepared for free through the IRS approved Volunteer Income Tax Assistance (VITA) Program." 
                                 },
                                 {
                                     "id"        : "card-0-body-1",
                                     "tag"       : "p",
-                                    "content"   : "Any taxpayer who has an email, smart phone/tablet/computer with a camera, and makes about $57,000/year or less is eligible. This new service keeps you and your family safe and ensures you have access to the services you need during this unprecedented time. Here's how it works: Schedule an appointment and a certified tax intake specialist will walk you through the process of submitting your documents online. We will complete your taxes and contact you directly to review before submitting to the IRS." 
+                                    "content"   : "VITA is a safe and reliable way for Accounting Aid Society or Wayne Metro to prepare your federal, state and city tax returns in-person or virtually, at no cost." 
                                 },
                                 {
                                     "id"        : "card-0-body-2",
                                     "tag"       : "p",
-                                    "content"   : "To get started making an online appointment, click the next button below to answer a few questions." 
+                                    "content"   : "Please the through the option descriptions below, and complete the survey to schedule a free tax prep appointment with a VITA provider." 
                                 },
                                 {
                                     "id"        : "card-0-body-3",
-                                    "tag"       : "p",
-                                    "content"   : "NEW APPOINTMENTS ARE RELEASED EVERY MORNING. PLEASE CHECK BACK IF YOU DO NOT SEE AN OPEN APPOINTMENT SLOT." 
+                                    "tag"       : "strong",
+                                    "content"   : "1. Virtual: From the convenience of your home" 
+                                },
+                                {
+                                    "id"        : "card-0-body-4",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-4-list-0",
+                                            "tag"       : "p",
+                                            "content"   : "Schedule a virtual appointment" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-4-list-1",
+                                            "tag"       : "p",
+                                            "content"   : "A certified tax intake specialist will call you and walk you through the process of submitting your documents online" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-4-list-2",
+                                            "tag"       : "p",
+                                            "content"   : "We will complete your taxes and contact you directly to review before submitting to the IRS." 
+                                        }
+                                    ] 
+                                },
+                                {
+                                    "id"        : "card-0-body-5",
+                                    "tag"       : "strong",
+                                    "content"   : "2. Drop Off: A combination of over the phone and limited contact" 
+                                },
+                                {
+                                    "id"        : "card-0-body-6",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-6-list-0",
+                                            "tag"       : "p",
+                                            "content"   : "Schedule a virtual appointment" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-6-list-1",
+                                            "tag"       : "p",
+                                            "content"   : "A certified tax intake specialist will call you to gather all of your information and confirm the documents needed to complete your taxes" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-6-list-2",
+                                            "tag"       : "p",
+                                            "content"   : "The intake specialist will help you select a location and time to drop off your documents to a tax preparer at a later date" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-6-list-3",
+                                            "tag"       : "p",
+                                            "content"   : "We will complete your taxes and contact you to return to the drop off location to review and pick up a copy of your return" 
+                                        },
+                                        {
+                                            "id"        : "card-0-body-6-list-4",
+                                            "tag"       : "p",
+                                            "content"   : "We will then submit it to the IRS" 
+                                        }
+                                    ] 
+                                },
+                                {
+                                    "id"        : "card-0-body-7",
+                                    "tag"       : "strong",
+                                    "content"   : "3. In-Person: On-site services designed to maintain a safe and socially distanced environment." 
+                                },
+                                {
+                                    "id"        : "card-0-body-8",
+                                    "tag"       : "ul",
+                                    "content"   : [
+                                        {
+                                            "id"        : "card-0-body-8-list-0",
+                                            "tag"       : "p",
+                                            "content"   : "Schedule an appointment to have your tax return prepared in-person, on-site. Please allow 1 hour for your appointment" 
+                                        }
+                                    ] 
                                 }
                             ]
                         }
@@ -354,7 +427,7 @@
                             "needsNewID"                : false,
                             "historyOverrite"           : null,
                             "nextGlobal"                : null,
-                            "isPosting"                 : true,
+                            "isPosting"                 : false,
                             "isGetting"                 : false,
                             "isPostingFullForm"         : true,
                             "postingTypeGlobal"         : null,
@@ -365,7 +438,7 @@
                                     "validation"            : "detroit",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : false,
                                     "formType"              : "application",
                                     "postingType"           : null,
@@ -378,7 +451,7 @@
                                     "validation"            : "united-way",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
                                     "postingType"           : null,
@@ -391,7 +464,7 @@
                                     "validation"            : "aid-society",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
                                     "postingType"           : null,
@@ -404,7 +477,7 @@
                                     "validation"            : "wayne-metro",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
                                     "postingType"           : null,
@@ -417,7 +490,7 @@
                                     "validation"            : "tv-radio",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
                                     "postingType"           : null,
@@ -430,7 +503,7 @@
                                     "validation"            : "family-friends",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
                                     "postingType"           : null,
@@ -443,7 +516,7 @@
                                     "validation"            : "other",
                                     "validationType"        : "equal",
                                     "addRandom"             : true,
-                                    "next"                  : 2,
+                                    "next"                  : 3,
                                     "isSwitchingFormType"   : true,
                                     "formType"              : "status",
                                     "postingType"           : null,
@@ -606,6 +679,180 @@
                                         "label"                 : true,
                                         "labelPosition"         : "after",
                                         "labelText"             : "Other",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "submit",
+                                        "tag"                   : "button",
+                                        "type"                  : "submit",
+                                        "value"                 : "submit",
+                                        "placeholder"           : null,
+                                        "name"                  : "submit",
+                                        "description"           : "Submit information",
+                                        "text"                  : "Next",
+                                        "label"                 : false,
+                                        "labelText"             : null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "hints" :[]
+            }
+        },
+        {
+            "items" : {
+                "header": [
+                    {
+                        "id": "application",
+                        "text": "Tax Preparation Service Survey",
+                        "logo": true,
+                        "logoURL": "https://detroitmi.gov/themes/custom/detroitmi/logo-white.png",
+                        "logoAlt": "City of Detroit",
+                        "form": true
+                    }
+                ],
+                "cards": [
+                    {   
+                        "id"        : "step-3-card-0",
+                        "type"      : "right pop-up",
+                        "title"     : {
+                            "type"  : "small",
+                            "value" : null
+                        },
+                        "body"   : {
+                            "type"      : "text",
+                            "markup"    : [
+                                {
+                                    "id"        : "card-0-body-0",
+                                    "tag"       : "strong",
+                                    "content"   : "Select Your Tax Prep Option" 
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "forms": [
+                    {
+                        "id"            : "prep-type",
+                        "type"          : "radio-buttons plus-other",
+                        "position"      : "center",
+                        "savedData"     : true,
+                        "requirements"  : {
+                            "inputType"                 : "radio",
+                            "formTypeGlobal"            : null,
+                            "isSwitchingFormTypeGlobal" : null,
+                            "needsNewID"                : false,
+                            "historyOverrite"           : null,
+                            "nextGlobal"                : null,
+                            "isPosting"                 : false,
+                            "isGetting"                 : false,
+                            "isPostingFullForm"         : true,
+                            "postingTypeGlobal"         : null,
+                            "isFinalStep"               : false,
+                            "logic": [
+                                {
+                                    "id"                    : "prep-type",
+                                    "validation"            : "virtual",
+                                    "validationType"        : "equal",
+                                    "next"                  : 5,
+                                    "isSwitchingFormType"   : false,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "prep-type",
+                                    "validation"            : "drop-off",
+                                    "validationType"        : "equal",
+                                    "next"                  : 5,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                },
+                                {
+                                    "id"                    : "prep-type",
+                                    "validation"            : "in-person",
+                                    "validationType"        : "equal",
+                                    "next"                  : 4,
+                                    "isSwitchingFormType"   : true,
+                                    "formType"              : "application",
+                                    "postingType"           : null,
+                                    "multiLogic"            : false,
+                                    "multiLogicOpts"        : [],
+                                    "specialTask"           : null
+                                }
+                            ]
+                        },
+                        "text"          : {
+                            "type"      : "text",
+                            "markup"    : []
+                        },
+                        "sections"      : [
+                            {
+                                "id"    : "step-3-form-0-section-0",
+                                "items" : [
+                                    {   
+                                        "id"                    : "virtual",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "virtual",
+                                        "placeholder"           : null,
+                                        "name"                  : "prep-type",
+                                        "description"           : "virtual",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Virtual",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "drop-off",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "drop-off",
+                                        "placeholder"           : null,
+                                        "name"                  : "prep-type",
+                                        "description"           : "drop-off",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "Drop Off",
+                                        "hasSpecialAttribute"   : false,
+                                        "specialAttribute"      : null,
+                                        "otherPlaceholder"      : null,
+                                        "otherLabel"            : null,
+                                        "otherID"               : null,
+                                        "required"              : true
+                                    },
+                                    {   
+                                        "id"                    : "in-person",
+                                        "tag"                   : "input",
+                                        "type"                  : "radio",
+                                        "value"                 : "in-person",
+                                        "placeholder"           : null,
+                                        "name"                  : "prep-type",
+                                        "description"           : "in-person",
+                                        "text"                  : "",
+                                        "label"                 : true,
+                                        "labelPosition"         : "after",
+                                        "labelText"             : "In-Person",
                                         "hasSpecialAttribute"   : false,
                                         "specialAttribute"      : null,
                                         "otherPlaceholder"      : null,
