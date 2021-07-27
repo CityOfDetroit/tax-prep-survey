@@ -715,7 +715,7 @@ function Form(props) {
         let specialType  = false;
         let inputData    = {};
         let tempFormData = {};
-        let postData     = {data:null, key: "tax_assistance"};
+        let postData     = {answers:null};
         let tempHistory  = [];
         let currentLogic, currentMultiLogic, currentNext; 
         if(requirements.logic.length){
@@ -744,9 +744,7 @@ function Form(props) {
                     case 'equal':
                         return inputData[l.id].includes(l.validation);   
                         break;
-
-                    case 'random':
-
+                
                     default:
                         break;
                 }
@@ -818,73 +816,9 @@ function Form(props) {
             switch (true) {
                 case requirements.isPosting == true:
                     postData.answers = tempFormData;
-                    fetch('https://apis.detroitmi.gov/data_cache/user_cache/user_cache_tax_assistance/')
-                    .then((res) => {
-                        res.json().then(data => {
-                            switch (tempFormData['hear-about']['hear-about'][0]) {
-                                case 'aid-society':
-                                    if(props.aidSociety){
-                                        currentNext = 3;
-                                    }else{
-                                        currentNext = 4;
-                                    }
-                                    break;
-
-                                case 'wayne-metro':
-                                    if(props.wayneMetro){
-                                        currentNext = 4;
-                                    }else{
-                                        currentNext = 3;
-                                    }
-                                    break;
-                            
-                                default:
-                                    if(data.data.last_company == 'aid-society'){
-                                        if(props.wayneMetro){
-                                            currentNext = 4;
-                                        }else{
-                                            currentNext = 3;
-                                        }
-                                    }else{
-                                        if(props.aidSociety){
-                                            currentNext = 3;
-                                        }else{
-                                            currentNext = 4;
-                                        }
-                                    }
-                                    break;
-                            }
-                            if(currentNext == 3){
-                                postData.data = {last_company: 'aid-society'};
-                            }else{
-                                postData.data = {last_company: 'wayne-metro'};
-                            }
-                            let req = new Request('https://apis.detroitmi.gov/data_cache/user_cache/data/', {
-                                method: 'POST',
-                                body: JSON.stringify(postData),
-                                headers: new Headers({
-                                  'Content-type'    : 'application/json',
-                                }),
-                                redirect: 'follow'
-                              });
-                            fetch(req)
-                            .then((res) => {
-                                res.json().then(data => {
-                                });
-                            })
-                            .catch((error) => {
-                                console.log(error);
-                            });
-                            tempHistory = stepHistory;
-                            tempHistory.push(step);
-                            setStepHistory(tempHistory);
-                            setStep(currentNext);
-                        });
-                    })
-                    .catch((error) => {
-                        console.log(error);
-                    });
-                    // Connector.start('post',`https://apis.detroitmi.gov/data_cache/user_cache/data/`,postData,true,props.token,'application/json',(e)=>{handleAPICalls(e, 'saveForm', step, currentNext, requirements.isFinalStep)},(e)=>{handleAPICalls(e, 'saveForm', step)});
+                    console.log(postData);
+                    console.log(tempFormData);
+                    Connector.start('post', requirements.APIURL, postData,true,props.token,'application/json',(e)=>{handleAPICalls(e, 'saveForm', step, currentNext, requirements.isFinalStep)},(e)=>{handleAPICalls(e, 'saveForm', step)});
                     break;
 
                 case requirements.isGetting == true:

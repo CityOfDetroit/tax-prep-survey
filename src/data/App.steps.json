@@ -138,6 +138,7 @@
                             "isPostingFullForm"         : false,
                             "postingTypeGlobal"         : null,
                             "isFinalStep"               : false,
+                            "APIURL"                    : null,
                             "logic": [
                                 {
                                     "validation"            : "Next",
@@ -227,6 +228,7 @@
                             "isPostingFullForm"         : true,
                             "postingTypeGlobal"         : null,
                             "isFinalStep"               : false,
+                            "APIURL"                    : null,   
                             "logic": [
                                 {
                                     "id"                    : "live",
@@ -432,6 +434,7 @@
                             "isPostingFullForm"         : true,
                             "postingTypeGlobal"         : null,
                             "isFinalStep"               : false,
+                            "APIURL"                    : null,
                             "logic": [
                                 {
                                     "id"                    : "hear-about",
@@ -751,11 +754,12 @@
                             "needsNewID"                : false,
                             "historyOverrite"           : null,
                             "nextGlobal"                : null,
-                            "isPosting"                 : false,
+                            "isPosting"                 : true,
                             "isGetting"                 : false,
                             "isPostingFullForm"         : true,
                             "postingTypeGlobal"         : null,
                             "isFinalStep"               : false,
+                            "APIURL"                    : "https://apis.detroitmi.gov/surveys/tax_prep_assistance/",
                             "logic": [
                                 {
                                     "id"                    : "prep-type",
